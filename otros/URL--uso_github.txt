@@ -1,0 +1,22 @@
+http://localhost/xampp/php/capitulo1/ejercicio01.php
+
+
+UTILIZACION GITHUB
+
+COMANDOS PRINCIPALES
+working directory --> stating area  => git add
+stating area --> local repo	    => git commit
+local repo --> remote repo(serv git)=> git push
+
+remore repo --> local repo 	    => git fetch
+local repo  --> working directory   => git checkout
+local repo  --> working directory   => git merge
+
+PASOS
+
+1. creamos nuevo repositorio
+2. para trabajar de forma remota debemos crear un clone del repositorio, coger la url: https://github.com/jofuto29/php.git
+3. en el terminal git clone https://github.com/jofuto29/php.git
+4. git status dentro de la carpeta php que crea, asi vemos que archivos no estan en el repositorio local
+5. git add . --> git commir -m "primer commit" --> git push(tendremos que logearnos en github cuando hagamos el push)
+6. si ahora se modifica desde otro sitio y queremos actualizar lo que tenemos en el repositorio local => git pull

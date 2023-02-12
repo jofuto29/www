@@ -19,6 +19,8 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'surname',
+        'description',
         'email',
         'password',
     ];
@@ -41,4 +43,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    //relacion de 1 a muchos --> sacara todo los post relacionados con la usuario en concreto
+    public function posts(){
+        return $this->hasMany('App\Models\Posts');
+    }
+
+
 }

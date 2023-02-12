@@ -37,3 +37,6 @@ Route::get('/pruebas/{nombre?}{apellido?}', function ($nombre=null,$apellido=nul
 
 //Route::get('/animales' , [PruebasController::class, 'index']); //creamos una ruta pero en vez de pasarle una funcion anonima, callback, le pasaremos la direccion del controlador que hemos definido y el metodo que ejecutara
 Route::get('/animales' , 'App\Http\Controllers\PruebasController@index');
+
+//probando la base de datos
+Route::get('/testORM' , 'App\Http\Controllers\PruebasController@testORM');

@@ -61,13 +61,6 @@ class PruebasController extends Controller
             
 
         }
-
-
-
-
-
-
-
         
         die(); //no pide ninguna vista y corta la ejecucion del programa
     }
@@ -75,4 +68,18 @@ class PruebasController extends Controller
 
 }
 //ahora para ver este controlador en ejecucion deberemos definir una ruta donde se ejecute, de nuevo iremos a web crearemos una ruta pero esta vez sin funcion anonima, ir para ver
+
+/*
+A modo de resumen, un controlador es la parte que se encarga de recibir datos desde las vistas, y hacer cierta logica mediante estos datos y los que solicite a los modelos
+GENERAR CONTROLADOR --> php artisan make:controller nombre
+*/
+
+
+
+
+
+
 ?>
+
+
+

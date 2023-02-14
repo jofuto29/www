@@ -20,9 +20,8 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'surname',
-        'description',
         'email',
-        'password',
+        'password'
     ];
 
     /**
@@ -45,9 +44,9 @@ class User extends Authenticatable
     ];
 
 
-    //relacion de 1 a muchos --> sacara todo los post relacionados con la usuario en concreto
+    //relacion de 1 a muchos --> sacara todo los post relacionados con la usuario en concreto(un usuario puede tener muchos posst)
     public function posts(){
-        return $this->hasMany('App\Models\Posts');
+        return $this->hasMany('App\Models\Posts', "user_id");//segundo parametro el campo relaciona la calve foranea
     }
 
 
